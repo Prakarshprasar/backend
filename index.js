@@ -15,7 +15,7 @@ app.use(cors({
 app.get("/", (req,res)=>{
     res.send("hello")
 })
-app.get("/user",userRouter)
+app.use("/git",userRouter)
 
 const PORT = process.env.PORT || 8080 
 app.listen(PORT,()=>{
